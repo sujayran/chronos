@@ -38,7 +38,7 @@ uint32_t Hasher::do_hash(TimerID data, uint32_t seed)
 
 static Hasher hasher;
 
-inline uint32_t clock_gettime_ms(int clock_id)
+inline uint64_t clock_gettime_ms(int clock_id)
 {
   struct timespec now;
   clock_gettime(clock_id, &now);
